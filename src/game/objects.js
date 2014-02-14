@@ -19,7 +19,7 @@ Player = game.Class.extend({
         this.sprite.position.x = x;
         this.sprite.position.y = y;
         this.sprite.anchor.x = this.sprite.anchor.y = 0.5;
-        this.sprite.animationSpeed = 0.1;
+        this.sprite.animationSpeed = 0.02;
         this.sprite.play();
         game.scene.stage.addChild(this.sprite);
         game.scene.addObject(this);
@@ -90,6 +90,7 @@ Player = game.Class.extend({
         if(this.body.position.y < 0) return;
         this.body.velocity.y = this.jumpPower;
         game.sound.playSound('jump');
+        console.log("jump!");
     }
 });
 

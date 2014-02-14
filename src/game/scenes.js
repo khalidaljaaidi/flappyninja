@@ -15,7 +15,7 @@ SceneGame = game.Scene.extend({
 
     init: function() {
         this.world = new game.World(0, this.gravity);
-        
+
         this.addParallax(400, 'media/parallax1.png', -50);
         this.addParallax(550, 'media/parallax2.png', -100);
         this.addParallax(650, 'media/parallax3.png', -200);
@@ -34,7 +34,7 @@ SceneGame = game.Scene.extend({
         this.addParallax(800, 'media/ground.png', -300);
 
         this.player = new Player();
-        
+
         var groundBody = new game.Body({
             position: {x: game.system.width / 2, y: 850}
         });
@@ -46,7 +46,7 @@ SceneGame = game.Scene.extend({
         this.scoreText.position.x = game.system.width / 2 - this.scoreText.textWidth / 2;
         this.stage.addChild(this.scoreText);
 
-        var text = new game.Sprite(game.system.width / 2, game.system.height - 48, 'media/madewithpanda.png', {
+        var text = new game.Sprite(game.system.width / 2, game.system.height - 100, 'media/madewithpanda.png', {
             anchor: {x:0.5, y:0}
         });
         this.stage.addChild(text);
