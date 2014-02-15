@@ -1,7 +1,7 @@
-# Flying Dog
+# Flappy Ninja
 
 Flappy Bird clone made with [Panda.js](http://github.com/ekelokorpi/panda.js) game engine.
 
-## Install
+## How to run it
 
-Copy `engine` folder from [Panda.js](http://github.com/ekelokorpi/panda.js) to `src` folder.
+Run it online at http://khalidaljaaidi.github.io/flappyninja/
