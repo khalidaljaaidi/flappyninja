@@ -19,7 +19,7 @@ Player = game.Class.extend({
         this.sprite.position.x = x;
         this.sprite.position.y = y;
         this.sprite.anchor.x = this.sprite.anchor.y = 0.5;
-        this.sprite.animationSpeed = 0.02;
+        this.sprite.animationSpeed = 0.04;
         this.sprite.play();
         game.scene.stage.addChild(this.sprite);
         game.scene.addObject(this);
